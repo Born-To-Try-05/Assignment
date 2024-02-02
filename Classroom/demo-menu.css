@@ -1,0 +1,32 @@
+a {
+  font-variant: small-caps;
+  text-decoration: none;
+}
+
+a:link {
+  color: blue;
+}
+
+a:active {
+  color: aqua;
+}
+
+a:visited {
+  color: navy;
+}
+
+a:hover {
+  color: red;
+}
+
+.h11 {
+  color: pink;
+}
+
+.h12 {
+  color: red;
+}
+
+h1 {
+  color: pink !important;
+}

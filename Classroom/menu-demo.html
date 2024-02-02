@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo menu</title>
+    <style>
+      ul.hmenu {
+        margin: 0px;
+        padding: 0px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px red;
+        list-style: none;
+      }
+      ul.hmenu > li > a {
+        display: block;
+        line-height: 30px;
+        border-bottom: 1px dotted red;
+        text-decoration: none;
+        font-variant: small-caps;
+        color: black;
+        padding-left: 25px;
+        /* background: url(../img/icondong.png)  left center; */
+      }
+      ul.hmenu > li > a:hover {
+        font-weight: bolder;
+        color: aqua;
+      }
+      ul.vmenu {
+        margin: 0px;
+        padding: 0px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px red;
+        list-style: none;
+        background-color: red;
+        height: 50px;
+      }
+      ul.vmenu > li > a {
+        display: block;
+        line-height: 40px;
+        text-decoration: none;
+        font-variant: small-caps;
+        padding-left: 25px;
+      }
+      ul.vmenu > li > a:hover {
+        color: cadetblue;
+        font-weight: bolder;
+      }
+      ul.vmenu > li {
+        float: left;
+        margin: 0 5px;
+        position: relative;
+      }
+      ul.vmenu > li:hover > .submenu {
+        display: block;
+      }
+      .submenu {
+        margin: 0px;
+        padding: 0px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px red;
+        list-style: none;
+        width: 200px;
+        display: none;
+        position: absolute;
+      }
+      .submenu > li > a {
+        display: block;
+        line-height: 30px;
+        border-bottom: 1px dotted red;
+        text-decoration: none;
+        font-variant: small-caps;
+        padding-left: 25px;
+        color: red;
+      }
+      .submenu > li > a:hover {
+        color: red;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="vmenu">
+      <li><a href="#">home</a></li>
+      <li>
+        <a href="#">post</a>
+        <ul class="submenu">
+          <li><a href="#">home</a></li>
+          <li><a href="#">post</a></li>
+          <li><a href="#">consđ</a></li>
+          <li><a href="#">about</a></li>
+        </ul>
+      </li>
+      <li><a href="#">consđ</a></li>
+      <li><a href="#">about</a></li>
+    </ul>
+    <ul class="hmenu">
+      <li><a href="#">Hàng new</a></li>
+      <li><a href="#">Hàng yêu thích</a></li>
+      <li><a href="#">Hàng đặc biệt</a></li>
+      <li><a href="#">Hàng giảm giá</a></li>
+    </ul>
+  </body>
+</html>

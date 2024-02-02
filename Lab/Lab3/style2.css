@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: #333;
+  font-size: 18px;
+}
+
+a {
+  font-family: sans-serif;
+  color: -webkit-link;
+  font-size: 15px;
+  margin: 0 20px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 15px;
+  font-style: italic;
+  width: 425px;
+}
+
+.container {
+  display: flex;
+  margin: 50px;
+  gap: 40px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.product img {
+  height: 250px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.product .description {
+  letter-spacing: 0.8px;
+  margin: 20px;
+  text-align: center;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.description div {
+  color: #fff;
+  padding: 10px 25px;
+  background-color: rgba(30, 128, 0, 0.645);
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.description div:hover {
+  cursor: pointer;
+  background-color: rgba(30, 128, 0, 0.489);
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fieldset</title>
+  </head>
+  <body>
+    <!-- fieldset để trình bày gom các điều khiển theo nhóm -->
+    <!-- legend để tạo đề mục cho fieldset -->
+    <!-- label để tạo nhãn cho điều khiển -->
+    <fieldset>
+      <legend>giới tính</legend>
+      <label for=""> <input type="radio" name="gender" />Nam</label>
+      <label for=""> <input type="radio" name="gender" />Nữ</label>
+    </fieldset>
+    <br />
+    <!-- placeholder gợi ý ng sử dụng -->
+    <input type="text" tabindex="1" placeholder="hay nhap email" /> <br />
+    <!-- tabindex là thứ tự nhấn tab  -->
+    <input type="text" tabindex="2" value="cong" readonly /> <br />
+    <!-- readonly là chỉ đọc ko đc sửa -->
+    <input type="text" tabindex="0" /> <br />
+    <input type="text" tabindex="4" disabled /> <br />
+    <!-- disabled là vô hiệu hóa điều khiển -->
+  </body>
+</html>

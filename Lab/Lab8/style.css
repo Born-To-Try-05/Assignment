@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0 50px;
+}
+
+.header,
+.logo {
+  height: 90px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 20%;
+  height: 109px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  background-color: rgba(255, 30, 0, 0.832);
+}
+
+li {
+  padding: 10px 107px;
+  border-right: 1px solid white;
+}
+
+li:last-child {
+  border: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 0px;
+  font-size: 18px;
+}
+
+li:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.sub-header {
+  margin-top: 10px;
+  width: 100%;
+  height: 310px;
+}
+
+.sub-header img {
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  text-align: center;
+  position: absolute;
+  transform: translate(-50%, -40%);
+  padding: 5px 5px;
+  background-color: rgb(255, 234, 0);
+  width: 100%;
+  font-size: 17px;
+  border-radius: 22px;
+  color: rgba(0, 68, 255, 0.87);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  height: 95%;
+  width: 55%;
+}
+
+.title {
+  color: #fff;
+  font-size: 42px;
+}
+
+.yellow {
+  padding: 10px;
+  height: 60%;
+  width: 60%;
+  background: rgb(255, 234, 0);
+  color: rgb(0, 21, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.yellow h3 {
+  font-size: 35px;
+}
+
+.yellow h2 {
+  margin-top: 10px;
+  font-size: 100px;
+  line-height: 1;
+}
+
+sup {
+  font-size: 58px;
+}
+
+.bottom {
+  color: #fff;
+  font-size: 20px;
+}
+
+.deal {
+  margin: 35px 0 0 0;
+  text-transform: uppercase;
+  font-size: 23px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.product {
+  margin-top: 30px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #5555556b;
+  gap: 8px;
+}
+
+.product:hover {
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.756);
+  transition: 0.2s;
+}
+
+.product:hover img {
+  transition: 0.2s;
+  transform: scale(1.02);
+}
+
+.product img {
+  width: 90%;
+}
+
+del {
+  font-size: 17px;
+}
+
+.cost {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #009ee1;
+  color: #fff;
+  margin-top: 40px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}

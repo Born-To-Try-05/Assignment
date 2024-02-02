@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Layout</title>
+    <style>
+      header {
+        background-color: rgba(255, 0, 0, 0.87);
+      }
+
+      header img {
+        height: 200px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        background-color: rgba(0, 89, 255, 0.747);
+        height: 50px;
+      }
+
+      .box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 500px;
+        height: 100%;
+      }
+
+      a {
+        font-size: 20px;
+        padding: 10px;
+        text-decoration: none;
+      }
+
+      article {
+        margin-top: 10px;
+        width: 50%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h3 {
+        font-size: 25px;
+        color: #555;
+      }
+
+      .a1 {
+        float: left;
+        background-color: yellow;
+      }
+
+      .a2 {
+        float: right;
+        background-color: pink;
+      }
+
+      footer {
+        clear: both;
+        height: 150px;
+        background-color: green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header align="center">
+      <img src="./images/logoFpt.png" alt="" />
+    </header>
+    <nav>
+      <div class="box">
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a href="#">Hmmm</a>
+        <a href="#">More</a>
+      </div>
+    </nav>
+    <article class="a1"><h3>Article1</h3></article>
+    <article class="a2"><h3>Article2</h3></article>
+    <footer><h3>Footer</h3></footer>
+  </body>
+</html>

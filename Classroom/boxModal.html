@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box model</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        /* Khoảng đệm xung quanh */
+        padding: 10px;
+        /* border: 10px solid red; */
+        /* Lề xung quanh */
+        margin: 5px;
+        border-style: double;
+        border-width: 10px;
+        border-color: red;
+      }
+
+      body > img {
+        width: 300px;
+        padding: 10px;
+        margin: 5px;
+        background: blue;
+      }
+
+      .box2 {
+        width: 200px;
+        height: 150px;
+        padding: 20px;
+        margin: 12px;
+        border: 20px solid pink;
+        border-radius: 10px;
+        box-shadow: 5px 5px 2px gray;
+        background-image: url("./images/naruto.png");
+        background-color: blue;
+        background-size: 100% 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Content 1</div>
+    <div class="box">Content 2</div>
+
+    <img src="./images/naruto.png" alt="" />
+    <img src="./images/naruto.png" alt="" />
+
+    <div class="box2">
+      <img src="./images/logoFpt.png" alt="" width="100" />
+    </div>
+  </body>
+</html>

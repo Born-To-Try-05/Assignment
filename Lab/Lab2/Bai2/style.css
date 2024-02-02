@@ -1,0 +1,16 @@
+h2 {
+  font-size: 24px;
+}
+
+#name {
+  color: #555;
+}
+
+.space {
+  margin: 5px;
+}
+
+h2 > a {
+  text-decoration: none;
+  font-style: italic;
+}

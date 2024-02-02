@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab8 Bài3</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+      text-align: center;
+      height: 250px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    header img {
+      width: 100%;
+    }
+
+    header h1 {
+      position: absolute;
+      font-size: 40px;
+      color: white;
+      bottom: 20px;
+      left: 20px;
+      text-shadow: 0px 0px 5px red;
+    }
+
+    nav {
+      background-color: rgba(255, 55, 0, 0.874);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+
+    nav li {
+      list-style: none;
+      padding: 10px;
+    }
+
+    nav a {
+      font-variant: small-caps;
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    nav li:hover {
+      cursor: pointer;
+    }
+
+    nav li:hover .opacity {
+      opacity: 0.8;
+    }
+
+    .box {
+      position: relative;
+    }
+
+    .box:hover .container {
+      display: block;
+    }
+
+    .container {
+      position: absolute;
+      display: none;
+      top: 40px;
+      width: 160px;
+      z-index: 9;
+    }
+
+    .container:hover {
+      display: block;
+    }
+
+    .container ul {
+      display: block;
+    }
+
+    .container li {
+      padding: 10px;
+      border: 1px solid rgba(255, 55, 0, 0.874);
+      border-top: none;
+    }
+
+    .container a {
+      color: rgba(255, 55, 0, 0.915);
+    }
+
+    .container li:hover {
+      background-color: rgba(255, 55, 0, 0.918);
+      cursor: pointer;
+    }
+
+    .container li:hover a {
+      color: white;
+    }
+
+    .middle {
+      position: relative;
+      width: 100%;
+      height: 386px;
+    }
+
+    .middle ul {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      width: 280px;
+      right: 10px;
+      top: 10px;
+    }
+
+    .middle ul li {
+      padding: 9px;
+      border: 1px solid rgba(255, 55, 0, 0.44);
+      border-top: none;
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .middle ul li:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+
+    .middle ul li:first-child {
+      border: 1px solid rgba(255, 55, 0, 0.44);
+    }
+
+    .middle li img {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .middle a {
+      font-variant: small-caps;
+      font-size: 18px;
+      color: rgba(255, 55, 0, 0.782);
+      text-decoration: none;
+    }
+
+    .line1 {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: rgba(255, 55, 0, 0.782);
+      bottom: 4px;
+    }
+
+    .line2 {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: rgba(255, 55, 0, 0.782);
+      bottom: 0;
+    }
+
+    .footer {
+      border: 1px solid white;
+      background-color: rgba(127, 227, 255, 0.551);
+      width: 100%;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <body>
+    <header>
+      <img src="./2fb507af1d5c5d0e7e457434dcf39cc4.jpg" alt="" />
+      <h1>FPT Polytechnic</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a class="opacity" href="#">Trang chủ</a></li>
+        <li><a class="opacity" href="#">Giới thiệu</a></li>
+        <li class="box">
+          <a class="opacity" href="#">Liên hệ</a>
+          <div class="container">
+            <ul>
+              <li><a href="#">Mobile</a></li>
+              <li><a href="#">Email</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a class="opacity" href="#">Góp ý</a></li>
+        <li><a class="opacity" href="#">Hỏi đáp</a></li>
+      </ul>
+    </nav>
+    <div class="middle">
+      <ul>
+        <li>
+          <img src="./logo3.jpg" alt="" /><a href="#">Máy tính xách tay</a>
+        </li>
+        <li>
+          <img src="./logo3.jpg" alt="" /><a href="#">Điện thoại di động</a>
+        </li>
+        <li><img src="./logo3.jpg" alt="" /><a href="#">Máy quay phim</a></li>
+        <li><img src="./logo3.jpg" alt="" /><a href="#">Máy chụp ảnh</a></li>
+        <li><img src="./logo3.jpg" alt="" /><a href="#">Tủ lạnh</a></li>
+        <li><img src="./logo3.jpg" alt="" /><a href="#">Đồng hồ đeo tay</a></li>
+        <li>
+          <img src="./logo3.jpg" alt="" /><a href="#">Đồng hồ treo tường</a>
+        </li>
+        <li><img src="./logo3.jpg" alt="" /><a href="#">Máy giặt</a></li>
+        <li><img src="./logo3.jpg" alt="" /><a href="#">Bàn là</a></li>
+      </ul>
+      <div class="line1"></div>
+      <div class="line2"></div>
+    </div>
+    <div class="footer">FPT Polytechnic --- Tạ Đăng Công PH52792</div>
+  </body>
+</html>

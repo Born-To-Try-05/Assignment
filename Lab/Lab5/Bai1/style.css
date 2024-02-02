@@ -1,0 +1,18 @@
+.box-model {
+  text-align: center;
+  margin-top: 30px;
+}
+
+img {
+  width: 20%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgba(246, 255, 0, 0.91);
+  box-shadow: 0 0 5px rgba(0, 140, 255, 0.937);
+}
+
+img:hover {
+  box-shadow: 0 0 20px red;
+  background-color: aqua;
+}

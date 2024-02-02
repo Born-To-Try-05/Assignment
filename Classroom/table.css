@@ -1,0 +1,20 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+/* css cho tr lẻ */
+tr:nth-child(odd) {
+  background-color: yellow;
+}
+/* css cho tr chẵn */
+tr:nth-child(even) {
+  background-color: aqua;
+}
+/* đầu */
+tr:first-child {
+  background-color: blue;
+}
+/* cuối */
+tr:last-child {
+  background-color: yellowgreen;
+}

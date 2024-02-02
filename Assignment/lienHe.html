@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASM PH52792</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./imgs/logo2.jpg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/18ea624bf8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <head>
+      <div class="header-top"><img src="./imgs/logo.png" alt="" /></div>
+      <div class="header-bottom">
+        <ul class="menu">
+          <li>
+            <i class="fa-solid fa-house"></i
+            ><a href="./index.html">TRANG CHỦ</a>
+          </li>
+          <li class="has-child"><a href="./gioiThieu.html">GIỚI THIỆU</a></li>
+          <li class="has-child"><a href="./lienHe.html">LIÊN HỆ</a></li>
+          <li class="has-child"><a href="./gopY.html">GÓP Ý</a></li>
+          <li class="has-child"><a href="./hoiDap.html">HỎI & ĐÁP</a></li>
+        </ul>
+      </div>
+    </head>
+
+    <section id="information">
+      <div class="information-title"><h3>THÔNG TIN LIÊN HỆ</h3></div>
+      <div class="information-box">
+          <p class="title">TRƯỜNG THPT CHUYÊN LÊ QUÝ ĐÔN - BÌNH ĐỊNH</p>
+          <p class="text-bold">Địa chỉ: 02 Nguyễn Huệ, Hải Cảng, Quy Nhơn, Bình Định</p>
+          <div class="text-box"><p>Email: <div><p class="blue">thptlequydon@sgddt.binhdinh.gov.vn</p></div></p></div>
+         <div class="text-box"> <p>Điện thoại: <div><p class="blue">0243388888</p></div></p></div>
+          <div class="text-box"><p>Website: <div><p class="blue">www.lequydonbinhdinh.edu.vn</p></div></p></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="contact">
+        <div class="box">
+          <h3>GOOGLE MAP</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.64100877033!2d105.66670947508256!3d21.086995680576866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313456693fa30183%3A0x15e04a25bd16ea28!2zVHLGsOG7nW5nIFRIUFQgxJBhbiBQaMaw4bujbmc!5e0!3m2!1svi!2s!4v1706730644400!5m2!1svi!2s"
+            width="500"
+            height="500"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div class="box">
+          <h3>FANPAGE CHÍNH THỨC</h3>
+          <iframe
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdanphuong2skul%3Flocale%3Dvi_VN&tabs=timeline&width=500px&height=500px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+            width="500px"
+            height="500px"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+        </div>
+      </div>
+
+      <div id="footer-bottom">
+        <p>
+          Copyright 2024 © Le Quy Don High school for Gifted students in Ha Noi
+        </p>
+        <p>Designed & Developed by Tạ Đăng Công PH52792</p>
+      </div>
+    </footer>
+
+    <div id="up" onclick="scrollToTop()">
+      <i class="fa-solid fa-circle-arrow-up"></i>
+    </div>
+
+    <script>
+      const upButton = document.getElementById("up");
+      const footerElement = document.getElementById("footer-bottom");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          upButton.style.display = "block";
+        } else {
+          upButton.style.display = "none";
+        }
+      }
+
+      function scrollToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      window.addEventListener("scroll", function () {
+        if (
+          window.innerHeight + window.scrollY - 36 >=
+          document.body.offsetHeight - footerElement.offsetHeight
+        ) {
+          upButton.style.bottom = "90px";
+        } else {
+          upButton.style.bottom = "36px";
+        }
+      });
+    </script>
+  </body>
+</html>

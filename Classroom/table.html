@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./table.css" />
+  </head>
+  <body>
+    <table border="1">
+      <!-- caption dùng để điểm danh nhãn cho bảng -->
+      <caption>
+        ĐIỂM DANH
+      </caption>
+      <tr>
+        <!-- th là thẻ tiêu đề -->
+        <th>Tên sinh viên</th>
+        <th>Học phí</th>
+      </tr>
+      <tr>
+        <!-- td là thẻ nội dung, bình thường và căn trái -->
+        <!-- colspan, rowspan để gộp các ô  -->
+        <td>Nguyễn Xuân Bách</td>
+        <td align="right">10trieu</td>
+      </tr>
+      <tr>
+        <td>Nguyễn Xuân Bách</td>
+        <td>10trieu</td>
+      </tr>
+      <tr>
+        <td>Nguyễn Xuân Bách</td>
+        <td>10trieu</td>
+      </tr>
+    </table>
+    <br />
+
+    <!-- nhóm các hang -->
+    <!-- chú ý: thẻ <thead>, <tfoot> chỉ xuất hiện 1 lần  -->
+    <!-- thẻ <tbody> có thể xuất hiện nhiều lần  -->
+    <table border="1">
+      <caption>
+        BẢNG LƯƠNG
+      </caption>
+      <thead>
+        <tr>
+          <th>Tên Nhân Viên</th>
+          <th>Lương</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Xuân Bách</td>
+          <td>10 củ</td>
+        </tr>
+        <tr>
+          <td>Xuân Bách</td>
+          <td>15 củ</td>
+        </tr>
+        <tr>
+          <td>Xuân Bách</td>
+          <td>90 củ</td>
+        </tr>
+        <tr>
+          <td>Xuân Bách</td>
+          <td>Lương tâm</td>
+        </tr>
+      </tbody>
+
+      <!-- kết thúc nhóm các hàng -->
+      <tfoot>
+        <tr>
+          <th align="right">Tổng</th>
+          <th align="left">115 củ</th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
